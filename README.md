@@ -14,4 +14,8 @@ With VLAN, you can create multiple interfaces on top of a single one and filter 
 Before MACVLAN, if you wanted to connect to physical network from a VM or namespace, you would have needed to create TAP/VETH devices and attach one side to a bridge and attach a physical interface to the bridge on the host at the same time.
 ## IPVLAN
 ![ipvlan](https://github.com/user-attachments/assets/a9af96ad-f516-4c04-86b6-f9bf025a7239)
-## 
+## VETH
+The VETH (virtual Ethernet) device is a local Ethernet tunnel. Devices are created in pairs, as shown in the diagram below.
+Packets transmitted on one device in the pair are immediately received on the other device. When either device is down, the link state of the pair is down.
+
+Pair of VETH devices
